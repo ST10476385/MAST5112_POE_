@@ -11,7 +11,7 @@
 ---
 **Institution:** IIE Rosebank College
 ---
-**Date of Submission:**2025-11-10
+**Date of Submission:** 2025-11-10
 ---
 **Lecturer:** WELCOME ZARANYIKA
 ---
@@ -41,7 +41,56 @@ This project fulfills all the rubric requirements provided, showcasing both tech
 - Language: TypeScript (strict)
 - Key features implemented: menu data entry (dish name, description, course, price), predefined courses, home screen menu list, total item count, average price per course (PoE), separate Manage screen to add/remove items, filter screen to filter by course, splash screen (5s)
 ---
+
  ## **App Preview**
+## 🧩 Component Enhancement
+
+This section outlines all major component enhancements and refactoring implemented during the final phase of the project. Each improvement was made to optimize performance, improve user experience, and align with professional mobile development standards.
+
+### 1. Splash Screen Enhancement
+- Added a **five-second splash screen** featuring a **blurred luxury restaurant background** and the title *“Christoffel — Private Chef”*.
+- Improved user experience by providing a polished introduction that reflects the brand’s fine-dining aesthetic.
+- Integrated automatic navigation to the `HomeScreen` once loading is complete.
+
+### 2. Home Screen Enhancements
+- Redesigned layout to display a clear **menu summary section**, including total items and average prices by course.
+- Added **dynamic data binding**, ensuring real-time updates when items are added or removed.
+- Implemented **category summaries** (Starters, Mains, Desserts, Appetizers, Sides, Beverages) with responsive text and spacing for better readability.
+- Enhanced overall visual design with padding, font consistency, and spacing improvements.
+
+### 3. Manage Menu Screen Enhancements
+- Refactored input fields for better clarity: *Dish Name, Description, Course,* and *Price*.
+- Integrated a **dropdown component** for selecting predefined course types.
+- Added real-time validation for form fields to prevent blank or invalid submissions.
+- Improved button design — the **“Add Item”** button now uses a **vibrant orange color** to draw focus and enhance usability.
+- Introduced **remove functionality** for each item with confirmation feedback for better user control.
+
+### 4. Filter Menu Screen Enhancements
+- Added a **filter navigation bar** with clickable category buttons (All, Starters, Mains, Desserts, Appetizers, Sides, Beverages).
+- Implemented dynamic filtering to display only items belonging to the selected category.
+- Enhanced list rendering to ensure smooth scrolling and category transitions.
+- Optimized layout responsiveness for both web and mobile views.
+
+### 5. Data Management and State Handling
+- Improved state management within `App.tsx` to handle dynamic updates across all screens.
+- Structured data arrays with TypeScript interfaces from `/types/menu.ts` for strong typing and improved maintainability.
+- Enhanced performance by minimizing unnecessary re-renders when updating or filtering menu items.
+
+### 6. Component Reusability and Code Refactoring
+- Extracted reusable UI components such as `MenuCard` to ensure consistent design across screens.
+- Cleaned up redundant code and improved readability by separating logic into smaller, modular functions.
+- Ensured all components adhere to **React Native best practices** and **TypeScript type safety**.
+
+### 7. Visual and User Experience Improvements
+- Introduced cohesive color palette consistent with luxury dining themes.
+- Used spacing, border-radius, and typography enhancements to maintain aesthetic harmony.
+- Optimized layout for various screen sizes through responsive styling adjustments.
+- Added consistent feedback messages for actions like adding or removing menu items.
+
+---
+
+### ✨ Summary
+The component enhancements collectively improved the app’s functionality, maintainability, and overall presentation. These refinements resulted in a smoother, more professional user experience while meeting both **academic requirements** and **industry standards** for mobile app development.
 
 **Splash Screen**
 
@@ -267,7 +316,6 @@ Each time a dish is added or removed, the array updates and re-renders the menu 
 Show the array update process by adding and removing dishes.
 
 ---
-
 ### ✅ **8. Filter Screen to Show Items by Course**
 
 **Explanation:**
@@ -299,7 +347,328 @@ The project demonstrates professional folder organization and the use of **TypeS
   App.tsx
   ```
 * `types/menu.ts` defines the `MenuItem` interface.
+---
+  
+## Change Log
 
+This section details all major updates and improvements made since Part 2 of the project, as well as changes during refactoring and project restart.
+
+1. Project Restart
+
+Due to a 56% mark in Part 2, the project was rebuilt from scratch to ensure all requirements were properly met.
+
+Codebase was fully restructured for better readability, scalability, and efficiency.
+
+File structure was organized into the following directories:
+
+---
+/assets
+/components
+/data
+/screens
+/src
+/types
+/utils
+---
+
+The app now runs successfully on Expo Web Emulator, ensuring cross-platform compatibility.
+
+**2. Structural Changes**
+
+Created new folders for proper code organization:
+
+/screens → Contains all page components (Home, Manage, Filter, Menu, etc.)
+
+/components → Reusable UI components (e.g., MenuCard.tsx)
+
+/data → Static data files like initialMenu.ts
+
+/assets → All images and icons used in the project (logo, banner, splash screen, etc.)
+
+/utils and /types → Store helper functions and TypeScript types.
+
+Implemented TypeScript configuration for better type safety (tsconfig.json).
+
+**3. Feature & Functionality Enhancements**
+
+**Added Menu Management System:**
+
+* Users can now add new items to the menu directly from the Manage page.
+
+* Items include name, description, category, and price.
+
+* New items automatically update and reflect on the Menu page.
+
+* Filter Page Enhancement
+
+* Added category filters (Starters, Mains, Desserts, Appetizers, Sides, Beverages).
+
+* When clicked, each filter displays only menu items within that category.
+
+**Dynamic Menu Updates:**
+
+The menu now updates in real-time as new items are added or removed.
+
+**Improved UI Layout:**
+
+* Redesigned with a clean, luxury restaurant theme.
+
+* Added high-quality assets (background.jpeg, banner.jpeg) for an elegant presentation.
+
+## Component Enhancement
+
+A detailed explanation of the improvements made to each key component:
+
+**1. MenuCard Component (/components/MenuCard.tsx)**
+
+* Redesigned for modern and clean UI.
+
+* Each card now displays:
+
+* Menu item name.
+
+* Short description.
+
+* Category label.
+
+* Cards are responsive and align properly on different devices.
+
+**2. Manage Page**
+
+* Added form fields for:
+
+* Name
+
+* Description
+
+* Price
+
+* Category (Dropdown)
+
+* Added “Add Item” button (bright orange) that updates the initialMenu data dynamically.
+
+* Enhanced error handling (e.g., validation for empty fields).
+
+* Added scroll functionality for better viewing.
+
+**3. Home Page**
+
+* Displays overall menu summary, including:
+
+* Number of categories.
+
+* Total number of items.
+
+* Average price overview.
+
+* Improved structure for smooth navigation to other pages.
+
+**4. Filter Page**
+
+* Implemented top navigation bar with filter buttons for each category.
+
+* Added an “All” category to view all items at once.
+
+* Dynamic rendering: menu items change instantly when filter is selected.
+
+**5. Splash Screen**
+
+* Added custom splash screen with blurred luxury restaurant background.
+
+* Displays for 5 seconds before transitioning to Home page.
+
+## Refactoring Changes
+
+* Rewrote components into functional components with hooks for cleaner logic.
+
+* Used TypeScript interfaces for data consistency.
+
+* Removed unused imports, redundant code, and improved component naming.
+
+* Improved project scalability for future expansion (e.g., connecting to a backend).
+
+## Technologies Used
+
+* React Native (Expo)
+
+* TypeScript
+
+* JavaScript
+
+* CSS styling within components
+
+* Visual Studio Code
+
+* Expo Web Emulator
+
+
+
+## CHANGELOG (DETAILED DEVELOPMENT HISTORY)
+
+
+
+### Version 0.1 – Project Restart and Planning
+
+* Restarted the entire project after receiving 56% in the first submission.
+
+* Reviewed previous mistakes, reorganized project goals, and restructured the entire app from the ground up.
+
+* Installed and configured React Native, TypeScript, and Expo CLI.
+
+* Planned a cleaner architecture with separate folders for screens, components, and types for better maintainability.
+
+### Version 0.5 – Initial Setup and File Structure
+
+**Created main folders:**
+
+* screens/ for all app screens (Home, Manage, Filter).
+
+* components/ for reusable UI elements.
+
+* types/ for TypeScript interfaces.
+
+* data/ for static data such as the initial menu.
+
+* utils/ for helper functions.
+
+* assets/ for icons, images, and splash screen background.
+
+* Added configuration files: App.tsx, babel.config.js, tsconfig.json, package.json, and metro.config.js.
+
+* Tested that the project compiles correctly using the Expo web emulator.
+
+### Version 1.0 – Core Functionality Implementation
+
+* Developed the HomeScreen.tsx displaying all menu items by course.
+
+* Added a dynamic total item counter and average price summary section at the top of the home page.
+
+* Implemented reusable MenuCard component for displaying dish name, course, and price in a uniform layout.
+
+* Added logic for overall average price calculation.
+
+* Confirmed all data rendered correctly from initialMenu.ts.
+
+### Version 1.2 – Manage Menu Screen
+
+* Built ManageMenuScreen.tsx allowing the user to add and remove items dynamically.
+
+* Implemented input fields for:
+
+* Dish Name
+
+* Description
+
+* Course (dropdown selection)
+
+* Price
+
+* Configured “Add Item” button that updates the main menu array in real time.
+
+* Implemented “Remove Item” button that deletes selected dishes from the current menu list.
+
+* Verified that changes reflect instantly on the HomeScreen.
+
+### Version 1.3 – Component Enhancements
+**1. MenuCard Component**
+
+-Enhanced the card layout using consistent typography, padding, and spacing for a luxury restaurant feel.
+
+-Added a course badge (e.g., Starter, Main, Dessert) on each card for clear identification.
+
+-Improved responsiveness to adapt to different screen widths (web emulator and mobile views).
+
+-Applied shadows and rounded corners for a polished, modern look.
+
+**2. Input Components (Manage Page)**
+
+-Designed labeled text inputs for each field.
+
+-Added error handling and placeholder text (e.g., Enter Dish Name, Enter Price).
+
+-Improved button styling — large, centered “Add Item” button with a rich orange color to match the theme.
+
+**3. Summary Display (Home Screen)**
+
+-Refined the display of total item count and average prices using grid alignment.
+
+-Created a visually appealing summary area at the top showing overall average and course-specific averages.
+
+**4. Filter Buttons (FilterMenuScreen.tsx)**
+
+-Designed horizontal scrollable buttons for course categories (All, Starters, Mains, Desserts, etc.).
+
+-Implemented active button highlighting for the selected course.
+
+-Integrated logic to filter menu items dynamically based on user selection.
+
+**5. Splash Screen**
+
+-Created a custom splash screen with the title “Christoffel Private Chef”.
+
+-Added blurred background image of a fine dining restaurant for a luxury feel.
+
+-Configured 5-second display before transitioning to the HomeScreen.
+
+**6. Layout Consistency**
+
+-Ensured consistent margin, font, and color palette throughout the app.
+
+-Used modern typography to match high-end dining branding.
+
+-Improved accessibility and readability by adjusting contrast and spacing.
+
+### Version 1.4 – Filter Screen Implementation
+
+-Created FilterMenuScreen.tsx allowing the user to browse items by category.
+
+-Implemented toggle functionality between “All” and specific courses.
+
+-Verified correct data filtering for Starters, Mains, Desserts, Appetizers, Sides, and Beverages.
+
+-Tested smooth navigation and display consistency.
+
+### Version 1.5 – UI/UX Enhancements
+
+-Refined UI theme for a more luxurious aesthetic using elegant color tones and subtle gradients.
+
+-Added dynamic spacing and alignment for smooth scrolling on the web emulator.
+
+-Tested and optimized responsiveness for both desktop and mobile view.
+
+-Adjusted image scaling and icon alignment.
+
+## Version 1.6 – Final Testing and Quality Assurance
+
+-Conducted full testing cycle on Expo web emulator.
+
+-Validated that the menu updates dynamically when items are added or removed.
+
+-Checked all calculations for accuracy (total items, average prices).
+
+-Verified dropdown selections and filter buttons function as intended.
+
+-Ensured all UI components are properly linked and functional.
+
+### Version 1.7 – Documentation and Submission
+
+-Prepared a comprehensive README.md explaining:
+
+-App purpose and target user (Chef Christoffel)
+
+-Folder structure and file organization
+
+Technologies used (React Native, TypeScript, Expo)
+
+-How to run the project locally
+
+-Evidence checklist for assessment
+
+-Created a video demonstration with full narration of all functionalities.
+
+-Compiled all project files, configurations, and screenshots for GitHub submission.
+
+-Completed written documentation (Word PoE submission) with detailed explanations per screen.
 ## How the implementation maps to the assignment requirements
 
 I mapped each requirement from the question paper to the code. Below I show where the requirement is implemented and its status.
@@ -468,6 +837,7 @@ MDN Web Docs (2025) JavaScript Guide [online]. Available at: https://developer.m
 
 Stack Overflow (2025) React Native and TypeScript Community Solutions [online]. Available at: https://stackoverflow.com/questions/tagged/react-native
  (Accessed: 10 November 2025).
+
 
 
 
