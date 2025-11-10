@@ -11,7 +11,7 @@
 ---
 **Institution:** IIE Rosebank College
 ---
-**Date of Submission:** 2025-11-10
+**Date of Submission:**2025-11-10
 ---
 **Lecturer:** WELCOME ZARANYIKA
 ---
@@ -469,6 +469,7 @@ MDN Web Docs (2025) JavaScript Guide [online]. Available at: https://developer.m
 
 Stack Overflow (2025) React Native and TypeScript Community Solutions [online]. Available at: https://stackoverflow.com/questions/tagged/react-native
  (Accessed: 10 November 2025).
+
 
 
 
