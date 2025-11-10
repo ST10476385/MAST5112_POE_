@@ -1,0 +1,11 @@
+# Mark native Android and build artifacts as vendored so GitHub Linguist ignores them
+android/** linguist-vendored
+android/** linguist-generated
+*.jar linguist-vendored
+*.keystore linguist-vendored
+gradle/** linguist-vendored
+**/build/** linguist-vendored
+ # Ignore Expo metadata and node modules which can contain JS bundles
+ .expo/** linguist-vendored
+ node_modules/** linguist-vendored
+ web-build/** linguist-vendored
