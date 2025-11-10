@@ -1,13 +1,26 @@
 
-### **Student Details**
-
+# **Student Details**
+---
 **Name:** Khanyisa Shikwambana
+---
 **Student Number:** ST10476385
+---
 **Course:** Higher Certificate in Mobile and Application Development
+---
 **Module:** Mobile App Scripting 
+---
 **Institution:** IIE Rosebank College
+---
 **Date of Submission:** 2025-11-10
+---
 **Lecturer:** WELCOME ZARANYIKA
+---
+**YouTube Link** https://youtu.be/D6zB3dQMptE
+---
+**GitHub Link:** https://github.com/ST10476385/MAST5112_POE_ST10476385.git
+---
+
+----
 
 ---
 
@@ -28,35 +41,74 @@ This project fulfills all the rubric requirements provided, showcasing both tech
 - Language: TypeScript (strict)
 - Key features implemented: menu data entry (dish name, description, course, price), predefined courses, home screen menu list, total item count, average price per course (PoE), separate Manage screen to add/remove items, filter screen to filter by course, splash screen (5s)
 ---
-🖼️ App Preview
+ ## **App Preview**
 
-🏠 Home Screen
+**Splash Screen**
+
+Minimal luxury theme: gold and black palette.
+Placeholder for Splah:
+ <img width="1910" height="922" alt="screenshot-1762776074185" src="https://github.com/user-attachments/assets/fe2ee939-a177-4858-89a3-1d703f24ba02" />
+
+
+
+**Home Screen**
 
 Displays the complete menu and shows total menu items and average price by course.
 Placeholder for screenshot:
-![Home Screen](images/home-screen-placeholder.png)
 
-➕ Add Menu Item Screen
+ ![Screenshot_10-11-2025_162955_localhost](https://github.com/user-attachments/assets/81f57282-e3c2-4e27-b302-30fb6d1d1f21)
+---
+![Screenshot_10-11-2025_163010_localhost](https://github.com/user-attachments/assets/133172f6-6b44-46c1-acdd-4eabec452708)
+---
+![Screenshot_10-11-2025_163022_localhost](https://github.com/user-attachments/assets/20aab437-545f-4c75-8410-22b92076bec8)
+---
+![Screenshot_10-11-2025_163030_localhost](https://github.com/user-attachments/assets/7b2800bc-1df6-4b8c-a073-98c37333c585)
+---
+![Screenshot_10-11-2025_163050_localhost](https://github.com/user-attachments/assets/af2bfbd8-b8fa-42d8-bd34-ed8a504692a3)
+---
+![Screenshot_10-11-2025_163059_localhost](https://github.com/user-attachments/assets/e298b7ec-c275-44a8-a8e1-5896d16970bc)
+---
+![Screenshot_10-11-2025_163313_localhost](https://github.com/user-attachments/assets/027bf6f8-5858-4b28-b575-dd2946853657)
+---
+
+
+**Add Menu Item Screen**
 
 Separate screen for adding and removing dishes dynamically.
 Placeholder for screenshot:
-![Add Menu Screen](images/add-menu-screen-placeholder.png)
 
-🍴 Filter by Course Screen
+![Screenshot_10-11-2025_164149_localhost](https://github.com/user-attachments/assets/619270cc-670c-4fec-8777-76d6c8a16032)
+---
+![Screenshot_10-11-2025_16420_localhost](https://github.com/user-attachments/assets/016d3cc1-b43e-4513-b2b9-dc454657e8b8)
+---
+![Screenshot_10-11-2025_16428_localhost](https://github.com/user-attachments/assets/0f19d72e-0b0a-4138-b678-ccd3247f090f)
+---
+![Screenshot_10-11-2025_164221_localhost](https://github.com/user-attachments/assets/e26c02fc-8185-4736-b9f4-1ee7211ba612)
+---
+
+**Filter by Course Screen**
 
 Allows guests to filter dishes by course (e.g., starters, mains, desserts).
 Placeholder for screenshot:
-![Filter Screen](images/filter-screen-placeholder.png)
 
-🎨 App Icon / Branding
+![Screenshot_10-11-2025_16468_localhost](https://github.com/user-attachments/assets/78b34845-5638-4da0-ab9f-8be22e8312fc)
+---
+![Screenshot_10-11-2025_164617_localhost](https://github.com/user-attachments/assets/70e99a98-e4b6-4fd7-925f-3d13fdcefaec)
+---
+![Screenshot_10-11-2025_164627_localhost](https://github.com/user-attachments/assets/c4b1fad5-d967-4759-9c7e-dfd6ea65ab72)
+---
+![Screenshot_10-11-2025_164641_localhost](https://github.com/user-attachments/assets/f95d3aff-4e4c-4af4-a56e-eeac8640f815)
+---
+![Screenshot_10-11-2025_164650_localhost](https://github.com/user-attachments/assets/85fff7f0-1bf8-4633-989f-c226ad80d6cf)
+---
+![Screenshot_10-11-2025_164658_localhost](https://github.com/user-attachments/assets/8fe42c39-f172-4e1b-b3c2-3e1a09f5f7a5)
+---
 
-Minimal luxury theme: gold and black palette.
-Placeholder for logo:
-![App Logo](images/logo-placeholder.png)
 
-🧾 Features Implemented
 
-✅ Part 2 Features
+**Features Implemented**
+
+**Part 2 Features**
 
 - Add Menu Items — Input fields for dish name, description, course, and price.
 - Predefined Courses — Dropdown list includes Starters, Mains, Desserts, Sides, Beverages, Appetizers.
@@ -66,7 +118,7 @@ Placeholder for logo:
 - Luxury Styling — Gold and cream color scheme, fine dining layout.
 - Video Demonstration — Walkthrough uploaded to YouTube (unlisted).
 
-✅ Final PoE (Part 3) Features
+**Final PoE (Part 3) Features**
 
 - Separate Add Menu Screen — Chef can add or delete dishes on a dedicated page.
 - Average Price Calculation — Automatically shows average dish prices per course.
@@ -286,7 +338,7 @@ PoE / Final requirements (Parts 2 & 3)
 - 4) Guest filtering by course (separate page).
   - Status: Implemented. `FilterMenuScreen.tsx` lets guests choose a course and view matching items.
 
-Conclusion: I implemented the full Part 2 and final PoE requirements. The code is organized across multiple files and annotated so you can find each feature quickly.
+**Conclusion:** I implemented the full Part 2 and final PoE requirements. The code is organized across multiple files and annotated so you can find each feature quickly.
 
 ---
 
@@ -311,7 +363,7 @@ Quick checks if something fails:
 ## Evidence checklist for grading (what I'll show in the video)
 
 I recommend you record the following steps in your video submission and narrate each one:
-
+https://youtu.be/D6zB3dQMptE
 - Working app that compiles and runs (show `App.tsx`, Node & Expo versions).
 - Input fields for Dish Name, Description, Course, and Price (`ManageMenuScreen.tsx`).
 - Predefined course list (`types/menu.ts`).
@@ -391,6 +443,37 @@ This project showcases technical competence, creativity, and attention to detail
  (See <attachments> above for file contents. You may not need to search or read the file again.)
 
 ---
+
+## References
+
+Expo Documentation (2025) Getting Started with Expo [online]. Available at: https://docs.expo.dev/get-started/installation/
+ (Accessed: 10 November 2025).
+
+React Native (2025) React Native Documentation [online]. Available at: https://reactnative.dev/docs/getting-started
+ (Accessed: 10 November 2025).
+
+TypeScript (2025) TypeScript: JavaScript with Syntax for Types [online]. Available at: https://www.typescriptlang.org/docs/
+ (Accessed: 10 November 2025).
+
+React Navigation (2025) React Navigation Documentation [online]. Available at: https://reactnavigation.org/docs/getting-started
+ (Accessed: 10 November 2025).
+
+YouTube – Academind (2018) React Native Tutorial for Beginners [online video]. Available at: https://www.youtube.com/watch?v=0-S5a0eXPoc
+ (Accessed: 10 November 2025).
+
+YouTube – The Net Ninja (2020) React Native Full Course [online video]. Available at: https://www.youtube.com/watch?v=qSRrxpdMpVc
+ (Accessed: 10 November 2025).
+
+MDN Web Docs (2025) JavaScript Guide [online]. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+ (Accessed: 10 November 2025).
+
+Stack Overflow (2025) React Native and TypeScript Community Solutions [online]. Available at: https://stackoverflow.com/questions/tagged/react-native
+ (Accessed: 10 November 2025).
+
+
+
+
+
 
 
 
