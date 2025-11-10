@@ -17,7 +17,7 @@
 ---
 **YouTube Link** https://youtu.be/D6zB3dQMptE
 ---
-**GitHub Link:** https://github.com/ST10476385/MAST5112_POE_ST10476385.git
+**GitHub Link:** https://github.com/ST10476385/MAST5112_POE_.git
 ---
 
 ----
@@ -468,6 +468,7 @@ MDN Web Docs (2025) JavaScript Guide [online]. Available at: https://developer.m
 
 Stack Overflow (2025) React Native and TypeScript Community Solutions [online]. Available at: https://stackoverflow.com/questions/tagged/react-native
  (Accessed: 10 November 2025).
+
 
 
 
