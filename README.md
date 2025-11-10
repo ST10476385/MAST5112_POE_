@@ -154,7 +154,6 @@ Project files of interest:
 - `types/menu.ts` — TypeScript types (MenuItem, Course enums, etc.).
 - `assets/` — static images: `splash.png`, `background.jpeg`, icons.
 - `metro.config.ts`, `babel.config.ts`, `tsconfig.json` — configuration converted and tightened for TypeScript.
-
 ---
 
 ## **How the App Meets Specific Marking Rubric Items (Evidence Checklist)**
@@ -469,6 +468,7 @@ MDN Web Docs (2025) JavaScript Guide [online]. Available at: https://developer.m
 
 Stack Overflow (2025) React Native and TypeScript Community Solutions [online]. Available at: https://stackoverflow.com/questions/tagged/react-native
  (Accessed: 10 November 2025).
+
 
 
 
